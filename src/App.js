@@ -53,8 +53,9 @@ const [wordSubmitted, setWordSubmitted] = useState("avocado");
 </div>
 
 
-{myRecipes.map(element => (
-  <MyRecipesComponent transfer ={element.recipe.label} 
+{myRecipes.map((element, index) => (
+  <MyRecipesComponent key = {index}   
+  transfer ={element.recipe.label} 
   image ={element.recipe.image} 
   calories = {element.recipe.calories} 
   ingredients = {element.recipe.ingredientLines} />

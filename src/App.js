@@ -47,7 +47,7 @@ const [wordSubmitted, setWordSubmitted] = useState("avocado");
 </div>
 
 <div className='container'>
-     <button>
+     <button onClick={finalSearch}>
          <img src="https://img.icons8.com/fluency/48/000000/fry.png" alt="icon"/>
       </button>
 </div>

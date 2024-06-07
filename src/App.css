@@ -32,22 +32,24 @@ video {
     color: #575756;
     box-shadow: inset 0px 0px 0px 4px #ddd6e8;
     }
-  .containerTwo{
-    display: flex;
-    flex-direction: column;
-  }
+  
   .list {
     display: flex;
     flex-direction: column;
     align-items: center;
     list-style-type: none;
   }
-  li {
+  .containerTwo {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .first {
     background-color: #ddd6e8;
     padding: 10px;
     margin: 10px;
   }
-  h1, h2, ul, p {
+  h1, h2, ul, p, h3, li {
     font-family: "Open Sans", sans-serif;
     ;
   }
@@ -59,4 +61,15 @@ video {
     border-radius: 12px;
     border: none;
     background-color: #dbecc4;
+    }
+    h3 {
+      text-align: center;
+      color: #D83F31;
+    }
+    p {
+      font-style: italic;
+      font-weight: bold;
+    }
+    h2 {
+      color: #186F65;
     }

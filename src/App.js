@@ -17,6 +17,7 @@ const [wordSubmitted, setWordSubmitted] = useState("avocado");
     const getRecipe = async() => {
       const response = await fetch (`https://api.edamam.com/api/recipes/v2?type=public&q=${wordSubmitted}&app_id=${MY_ID}&app_key=${MY_KEY}`);
       const data = await response.json();
+      console.log(data.hits);
       setMyRecipes(data.hits);
     }
     getRecipe()
@@ -58,7 +59,9 @@ const [wordSubmitted, setWordSubmitted] = useState("avocado");
   transfer ={element.recipe.label} 
   image ={element.recipe.image} 
   calories = {element.recipe.calories} 
-  ingredients = {element.recipe.ingredientLines} />
+  ingredients = {element.recipe.ingredientLines} 
+  cautions = {element.recipe.cautions}
+  />
 )
 
 )}
